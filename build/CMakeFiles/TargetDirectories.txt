@@ -1,0 +1,3 @@
+/home/radek/Programming/UPR/Breakout/build/CMakeFiles/Breakout.dir
+/home/radek/Programming/UPR/Breakout/build/CMakeFiles/edit_cache.dir
+/home/radek/Programming/UPR/Breakout/build/CMakeFiles/rebuild_cache.dir
