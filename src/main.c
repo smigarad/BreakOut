@@ -1,19 +1,20 @@
 #include "../header/main.h"
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
+    int n = 100; // Počet bloků
     // konstruktory a inicializace SDL
-    Application *app = ApplicationConstructor();
-    Player *player = PlayerConstructor(app->renderer);
-    Ball *ball = BallConstructor(app->renderer);
-    Background *background = BackgroundConstructor(app->renderer);
-    int n = 20;
-    Block **blocks = BlocksConstructor(n, app->renderer);
-    Font *fontScore = FontConstructor();
-    Font *fontLives = FontConstructor();
-    Font *fontGame = FontConstructor();
-
-    bool fontsGameWasUsed;
+    Application *app = ApplicationConstructor();                    // Inicializace SDL a hlavní okénko
+    Player *player = PlayerConstructor(app->renderer);              // Inicializace hráče
+    Ball *ball = BallConstructor(app->renderer);                    // Inicializace míčku
+    Background *background = BackgroundConstructor(app->renderer);  // Inicializace pozadí
+    SDL_Texture **textures = SetTextures(app->renderer);            // Inicializace textur pro bloky
+    Block **blocks = BlocksConstructor(n, app->renderer, textures); // Inicializace bloků
+    Font *fontScore = FontConstructor();                            // Inicializace fontu pro skóre
+    Font *fontLives = FontConstructor();                            // Inicializace fontu pro životy
+    Font *fontGame = FontConstructor();                             // Inicializace fontu pro Game Over
+    SetPLayerName(player, argv[1], argc);                           // Nastavení jména hráče
+    bool writen;                                                    // Zda li bylo skóre zapsáno
     // hlavní smyčka
     while (app->running)
     {
@@ -22,17 +23,21 @@ int main(int argc, char *argv[])
         {
             if (player->start) // Pokud hra začala
             {
-                if(CheckWin(blocks,n))                             //výhra
-                    DrawPlayerWin(app->renderer, fontGame, player,app);
-                    
+                if (CheckWin(blocks, n)) // výhra
+                {
+                    DrawPlayerWin(app->renderer, fontGame, player, app);
+                    if (!writen)
+                    {
+                        WriteScore(player);
+                        writen = true;
+                    }
+                }
                 else
                 {
-                    Movement(player, app);   // pohyb hráče
-                    // UpdateVelocity(player);        // speed; - speed
-                    // UpdateSpeed(player);           // default nebo vyšší když se zmáčkne space
+                    Movement(player, app);         // pohyb hráče
                     UpdateBall(ball, player, app); // pohyb míčku
                     BlocksCollision(n, ball, blocks, player);
-
+                    // vykreslení
                     DrawBackground(app->renderer, background);           // vykreslení pozadí
                     DrawScore(app->renderer, fontScore, player->score);  // vykreslení skóre
                     DrawLives(player->health, app->renderer, fontLives); // vykreslení životů
@@ -43,12 +48,19 @@ int main(int argc, char *argv[])
                 }
             }
         }
-        
         else // konec hry
+        {
             DrawGameOver(app, fontGame, player);
+            if (!writen)
+            {
+                WriteScore(player);
+                writen = true;
+            }
+        }
 
         if (!player->start || player->controls[RESTART]) // Začátek hry a restart
         {
+            writen = false;
             DrawOpeningScene(app, fontGame);
             RestartPlayer(player);
             if (player->controls[START])
@@ -63,24 +75,20 @@ int main(int argc, char *argv[])
             }
         }
 
-        InputEvent(app, player); // IMPUT
+        InputEvent(app, player);          // IMPUT
         Frames(app);                      // FPS a jejich cap
         SDL_RenderPresent(app->renderer); // render
     }
 
     // Delokace paměti a ukončení SDL
-    for (int i = 0; i < n; i++)
-    {
-        DestroyBlock(blocks[i]);
-    }
-    free(blocks);
+    DestroyBlocks(blocks, n);
+    free(textures);
+    DestroyFont(fontGame);
     DestroyFont(fontScore);
     DestroyFont(fontLives);
-    DestroyFont(fontGame);
     DestroyPlayer(player);
     DestroyBall(ball);
     DestroyBackground(background);
-
     DestroyApp(app);
     return 0;
 }

@@ -188,5 +188,6 @@ CMakeFiles/Breakout.dir/src/game/ball.c.o: \
  /usr/include/SDL2/SDL_image.h /usr/include/SDL2/SDL.h \
  /home/radek/Programming/UPR/Breakout/src/game/../../header/Game/../InitRender/application.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
+ /usr/include/SDL2/SDL_ttf.h \
  /home/radek/Programming/UPR/Breakout/src/game/../../header/Game/../Game/player.h \
  /home/radek/Programming/UPR/Breakout/src/game/../../header/Game/../Game/block.h

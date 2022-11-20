@@ -129,30 +129,6 @@ Breakout/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/build
 .PHONY : Breakout/fast
 
-src/InitRender/InitObjects.o: src/InitRender/InitObjects.c.o
-.PHONY : src/InitRender/InitObjects.o
-
-# target to build an object file
-src/InitRender/InitObjects.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/InitRender/InitObjects.c.o
-.PHONY : src/InitRender/InitObjects.c.o
-
-src/InitRender/InitObjects.i: src/InitRender/InitObjects.c.i
-.PHONY : src/InitRender/InitObjects.i
-
-# target to preprocess a source file
-src/InitRender/InitObjects.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/InitRender/InitObjects.c.i
-.PHONY : src/InitRender/InitObjects.c.i
-
-src/InitRender/InitObjects.s: src/InitRender/InitObjects.c.s
-.PHONY : src/InitRender/InitObjects.s
-
-# target to generate assembly for a file
-src/InitRender/InitObjects.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/InitRender/InitObjects.c.s
-.PHONY : src/InitRender/InitObjects.c.s
-
 src/InitRender/application.o: src/InitRender/application.c.o
 .PHONY : src/InitRender/application.o
 
@@ -200,6 +176,30 @@ src/InitRender/draw.s: src/InitRender/draw.c.s
 src/InitRender/draw.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/InitRender/draw.c.s
 .PHONY : src/InitRender/draw.c.s
+
+src/InitRender/initObjects.o: src/InitRender/initObjects.c.o
+.PHONY : src/InitRender/initObjects.o
+
+# target to build an object file
+src/InitRender/initObjects.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/InitRender/initObjects.c.o
+.PHONY : src/InitRender/initObjects.c.o
+
+src/InitRender/initObjects.i: src/InitRender/initObjects.c.i
+.PHONY : src/InitRender/initObjects.i
+
+# target to preprocess a source file
+src/InitRender/initObjects.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/InitRender/initObjects.c.i
+.PHONY : src/InitRender/initObjects.c.i
+
+src/InitRender/initObjects.s: src/InitRender/initObjects.c.s
+.PHONY : src/InitRender/initObjects.s
+
+# target to generate assembly for a file
+src/InitRender/initObjects.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Breakout.dir/build.make CMakeFiles/Breakout.dir/src/InitRender/initObjects.c.s
+.PHONY : src/InitRender/initObjects.c.s
 
 src/game/ball.o: src/game/ball.c.o
 .PHONY : src/game/ball.o
@@ -306,15 +306,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... Breakout"
-	@echo "... src/InitRender/InitObjects.o"
-	@echo "... src/InitRender/InitObjects.i"
-	@echo "... src/InitRender/InitObjects.s"
 	@echo "... src/InitRender/application.o"
 	@echo "... src/InitRender/application.i"
 	@echo "... src/InitRender/application.s"
 	@echo "... src/InitRender/draw.o"
 	@echo "... src/InitRender/draw.i"
 	@echo "... src/InitRender/draw.s"
+	@echo "... src/InitRender/initObjects.o"
+	@echo "... src/InitRender/initObjects.i"
+	@echo "... src/InitRender/initObjects.s"
 	@echo "... src/game/ball.o"
 	@echo "... src/game/ball.i"
 	@echo "... src/game/ball.s"

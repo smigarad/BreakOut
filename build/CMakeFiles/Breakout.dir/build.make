@@ -83,24 +83,10 @@ CMakeFiles/Breakout.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Breakout.dir/src/main.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/radek/Programming/UPR/Breakout/src/main.c -o CMakeFiles/Breakout.dir/src/main.c.s
 
-CMakeFiles/Breakout.dir/src/InitRender/InitObjects.c.o: CMakeFiles/Breakout.dir/flags.make
-CMakeFiles/Breakout.dir/src/InitRender/InitObjects.c.o: ../src/InitRender/InitObjects.c
-CMakeFiles/Breakout.dir/src/InitRender/InitObjects.c.o: CMakeFiles/Breakout.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/radek/Programming/UPR/Breakout/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Breakout.dir/src/InitRender/InitObjects.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Breakout.dir/src/InitRender/InitObjects.c.o -MF CMakeFiles/Breakout.dir/src/InitRender/InitObjects.c.o.d -o CMakeFiles/Breakout.dir/src/InitRender/InitObjects.c.o -c /home/radek/Programming/UPR/Breakout/src/InitRender/InitObjects.c
-
-CMakeFiles/Breakout.dir/src/InitRender/InitObjects.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Breakout.dir/src/InitRender/InitObjects.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/radek/Programming/UPR/Breakout/src/InitRender/InitObjects.c > CMakeFiles/Breakout.dir/src/InitRender/InitObjects.c.i
-
-CMakeFiles/Breakout.dir/src/InitRender/InitObjects.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Breakout.dir/src/InitRender/InitObjects.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/radek/Programming/UPR/Breakout/src/InitRender/InitObjects.c -o CMakeFiles/Breakout.dir/src/InitRender/InitObjects.c.s
-
 CMakeFiles/Breakout.dir/src/InitRender/application.c.o: CMakeFiles/Breakout.dir/flags.make
 CMakeFiles/Breakout.dir/src/InitRender/application.c.o: ../src/InitRender/application.c
 CMakeFiles/Breakout.dir/src/InitRender/application.c.o: CMakeFiles/Breakout.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/radek/Programming/UPR/Breakout/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Breakout.dir/src/InitRender/application.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/radek/Programming/UPR/Breakout/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Breakout.dir/src/InitRender/application.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Breakout.dir/src/InitRender/application.c.o -MF CMakeFiles/Breakout.dir/src/InitRender/application.c.o.d -o CMakeFiles/Breakout.dir/src/InitRender/application.c.o -c /home/radek/Programming/UPR/Breakout/src/InitRender/application.c
 
 CMakeFiles/Breakout.dir/src/InitRender/application.c.i: cmake_force
@@ -114,7 +100,7 @@ CMakeFiles/Breakout.dir/src/InitRender/application.c.s: cmake_force
 CMakeFiles/Breakout.dir/src/InitRender/draw.c.o: CMakeFiles/Breakout.dir/flags.make
 CMakeFiles/Breakout.dir/src/InitRender/draw.c.o: ../src/InitRender/draw.c
 CMakeFiles/Breakout.dir/src/InitRender/draw.c.o: CMakeFiles/Breakout.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/radek/Programming/UPR/Breakout/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Breakout.dir/src/InitRender/draw.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/radek/Programming/UPR/Breakout/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/Breakout.dir/src/InitRender/draw.c.o"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Breakout.dir/src/InitRender/draw.c.o -MF CMakeFiles/Breakout.dir/src/InitRender/draw.c.o.d -o CMakeFiles/Breakout.dir/src/InitRender/draw.c.o -c /home/radek/Programming/UPR/Breakout/src/InitRender/draw.c
 
 CMakeFiles/Breakout.dir/src/InitRender/draw.c.i: cmake_force
@@ -124,6 +110,20 @@ CMakeFiles/Breakout.dir/src/InitRender/draw.c.i: cmake_force
 CMakeFiles/Breakout.dir/src/InitRender/draw.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Breakout.dir/src/InitRender/draw.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/radek/Programming/UPR/Breakout/src/InitRender/draw.c -o CMakeFiles/Breakout.dir/src/InitRender/draw.c.s
+
+CMakeFiles/Breakout.dir/src/InitRender/initObjects.c.o: CMakeFiles/Breakout.dir/flags.make
+CMakeFiles/Breakout.dir/src/InitRender/initObjects.c.o: ../src/InitRender/initObjects.c
+CMakeFiles/Breakout.dir/src/InitRender/initObjects.c.o: CMakeFiles/Breakout.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/radek/Programming/UPR/Breakout/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/Breakout.dir/src/InitRender/initObjects.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/Breakout.dir/src/InitRender/initObjects.c.o -MF CMakeFiles/Breakout.dir/src/InitRender/initObjects.c.o.d -o CMakeFiles/Breakout.dir/src/InitRender/initObjects.c.o -c /home/radek/Programming/UPR/Breakout/src/InitRender/initObjects.c
+
+CMakeFiles/Breakout.dir/src/InitRender/initObjects.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Breakout.dir/src/InitRender/initObjects.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/radek/Programming/UPR/Breakout/src/InitRender/initObjects.c > CMakeFiles/Breakout.dir/src/InitRender/initObjects.c.i
+
+CMakeFiles/Breakout.dir/src/InitRender/initObjects.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Breakout.dir/src/InitRender/initObjects.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/radek/Programming/UPR/Breakout/src/InitRender/initObjects.c -o CMakeFiles/Breakout.dir/src/InitRender/initObjects.c.s
 
 CMakeFiles/Breakout.dir/src/game/ball.c.o: CMakeFiles/Breakout.dir/flags.make
 CMakeFiles/Breakout.dir/src/game/ball.c.o: ../src/game/ball.c
@@ -170,9 +170,9 @@ CMakeFiles/Breakout.dir/src/game/player.c.s: cmake_force
 # Object files for target Breakout
 Breakout_OBJECTS = \
 "CMakeFiles/Breakout.dir/src/main.c.o" \
-"CMakeFiles/Breakout.dir/src/InitRender/InitObjects.c.o" \
 "CMakeFiles/Breakout.dir/src/InitRender/application.c.o" \
 "CMakeFiles/Breakout.dir/src/InitRender/draw.c.o" \
+"CMakeFiles/Breakout.dir/src/InitRender/initObjects.c.o" \
 "CMakeFiles/Breakout.dir/src/game/ball.c.o" \
 "CMakeFiles/Breakout.dir/src/game/block.c.o" \
 "CMakeFiles/Breakout.dir/src/game/player.c.o"
@@ -181,9 +181,9 @@ Breakout_OBJECTS = \
 Breakout_EXTERNAL_OBJECTS =
 
 Breakout: CMakeFiles/Breakout.dir/src/main.c.o
-Breakout: CMakeFiles/Breakout.dir/src/InitRender/InitObjects.c.o
 Breakout: CMakeFiles/Breakout.dir/src/InitRender/application.c.o
 Breakout: CMakeFiles/Breakout.dir/src/InitRender/draw.c.o
+Breakout: CMakeFiles/Breakout.dir/src/InitRender/initObjects.c.o
 Breakout: CMakeFiles/Breakout.dir/src/game/ball.c.o
 Breakout: CMakeFiles/Breakout.dir/src/game/block.c.o
 Breakout: CMakeFiles/Breakout.dir/src/game/player.c.o

@@ -188,9 +188,12 @@ CMakeFiles/Breakout.dir/src/main.c.o: \
  /usr/include/SDL2/SDL_image.h /usr/include/SDL2/SDL.h \
  /home/radek/Programming/UPR/Breakout/src/../header/InitRender/application.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
+ /usr/include/SDL2/SDL_ttf.h \
  /home/radek/Programming/UPR/Breakout/src/../header/Game/player.h \
  /home/radek/Programming/UPR/Breakout/src/../header/Game/block.h \
  /home/radek/Programming/UPR/Breakout/src/../header/InitRender/draw.h \
- /usr/include/SDL2/SDL_ttf.h \
- /home/radek/Programming/UPR/Breakout/src/../header/InitObjects.h \
- /home/radek/Programming/UPR/Breakout/src/../header/Game/ball.h
+ /home/radek/Programming/UPR/Breakout/src/../header/initObjects.h \
+ /home/radek/Programming/UPR/Breakout/src/../header/Game/ball.h \
+ /usr/include/time.h /usr/include/x86_64-linux-gnu/bits/time.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h

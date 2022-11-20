@@ -187,8 +187,8 @@ CMakeFiles/Breakout.dir/src/InitRender/InitObjects.c.o: \
  /usr/include/SDL2/SDL_locale.h /usr/include/SDL2/SDL_misc.h \
  /usr/include/SDL2/SDL_image.h /usr/include/SDL2/SDL.h \
  /usr/lib/gcc/x86_64-linux-gnu/11/include/stdbool.h \
+ /usr/include/SDL2/SDL_ttf.h \
  /home/radek/Programming/UPR/Breakout/src/InitRender/../../header/Game/ball.h \
  /home/radek/Programming/UPR/Breakout/src/InitRender/../../header/Game/../Game/player.h \
  /home/radek/Programming/UPR/Breakout/src/InitRender/../../header/Game/../Game/block.h \
- /home/radek/Programming/UPR/Breakout/src/InitRender/../../header/InitRender/draw.h \
- /usr/include/SDL2/SDL_ttf.h
+ /home/radek/Programming/UPR/Breakout/src/InitRender/../../header/InitRender/draw.h
